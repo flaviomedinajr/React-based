@@ -9,13 +9,14 @@ export default function App() {
   function handleSubmit(e) {
     e.preventDefault()
 
-    setTodos([...todos, 
-      {
-      id: crypto.randomUUID(), 
+    setTodos((currentTodos) => {
+      return [
+        ...currentTodos, 
+      {id: crypto.randomUUID(), 
       title: newItem, 
-      completed: false
-    }
-  ])
+      completed: false}
+      ]
+    })
   }
 
   return (
@@ -32,22 +33,22 @@ export default function App() {
     </div>
     <button className="btn">Add</button>
   </form>
+
   <h1 className="header">Todo List</h1>
   <ul className="list">
-    <li>
+    
+    {todos.map( todo => {
+      return (
+      <li key={todo.id}>
       <label>
-        <input type="checkbox" />
-        Item 1
+        <input type="checkbox" checked={todo.
+        completed} />
+        {todo.title}
       </label>
       <button className="btn btn-danger">Delete</button>
     </li>
-    <li>
-      <label>
-        <input type="checkbox" />
-        Item 2
-      </label>
-      <button className="btn btn-danger">Delete</button>
-    </li>
+    )
+    })}
   </ul>
   </>
   )
