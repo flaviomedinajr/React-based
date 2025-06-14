@@ -4,14 +4,28 @@ import { useState } from "react"
 
 export default function App() {
   const [newItem, setNewItem] = useState("")
+  const [todos, setTodos] = useState([])
 
-  
+  function handleSubmit(e) {
+    e.preventDefault()
+
+    setTodos([...todos, 
+      {
+      id: crypto.randomUUID(), 
+      title: newItem, 
+      completed: false
+    }
+  ])
+  }
+
   return (
   <>
-  <form className="new-item-form">
+  <form onSubmit={handleSubmit} className="new-item-form">
     <div className="form-row">
       <label htmlFor="item">New Item</label>
-      <input value={newItem} onChange={e => setNewItem(e.target.value)} 
+      <input 
+      value={newItem} 
+      onChange={e => setNewItem(e.target.value)} 
       type="text" 
       id="item" 
       />
