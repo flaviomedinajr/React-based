@@ -6,23 +6,13 @@ import { NewTodoForm } from "./NewTodoForm"
 export default function App() {
   const [todos, setTodos] = useState([])
 
-  function toggleTodo(id, completed) {
-    setTodos(currentTodos =>  {
-      return currentTodos.map(todo => {
-        if (todo.id === id) {
-          return { ...todo, completed}
-        }
-        return todo
-      })
-    })
-  }
-
   function addTodo(title) {
-    return [
+    setTodos(currentTodos => [
       ...currentTodos,
-      {id: crypto.randomUUID(), title, completed: false},
-    ]
+      { id: crypto.randomUUID(), title, completed: false },
+    ])
   }
+  
 
   function toggleTodo(id, completed) {
     setTodos(currentTodos => {
