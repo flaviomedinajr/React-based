@@ -1,4 +1,4 @@
-export function TodoList() {
+export function TodoList({todos}) {
     return (
         <ul className="list">
     {todos.length === 0 && "No Todos"}
@@ -7,8 +7,13 @@ export function TodoList() {
       return (
       <li key={todo.id}>
       <label>
-        <input type="checkbox" checked={todo.completed} 
-        onChange={e => toggleTodo(todo.id, e.target.checked)} />
+        <input 
+        type="checkbox" 
+        checked={todo.completed} 
+        // onChange={e => 
+        // toggleTodo(todo.id, e.target.checked)} 
+        />
+
         {todo.title}
       </label>
       <button 
