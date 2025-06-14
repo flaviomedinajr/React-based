@@ -6,3 +6,6 @@ What is React in programming?
 
 
 I'm excited to stay consistent and keep learning new things with React to improve and demonstrate my skills. I also plan to use React more heavily in this project to showcase my knowledge and experience with it.
+
+
+This project is about how to build a Todo List with the ability to add new items, using separate files that are connected together to make the app more organized, simple, and clear.
