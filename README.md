@@ -2,7 +2,7 @@
 
 What is React in programming?
 
-    - React is a JavaScript library used to build user interfaces like basically, the parts of a website you see and use, like buttons, menus, and forms. It lets developers create small, reusable pieces called components, which can be combined to build full websites or apps. This makes the code easier to manage, update, and reuse. React is fast, efficient, and used by big companies like Facebook and Netflix.
+- React is a JavaScript library used to build user interfaces like basically, the parts of a website you see and use, like buttons, menus, and forms. It lets developers create small, reusable pieces called components, which can be combined to build full websites or apps. This makes the code easier to manage, update, and reuse. React is fast, efficient, and used by big companies like Facebook and Netflix.
 
 
 I'm excited to stay consistent and keep learning new things with React to improve and demonstrate my skills. I also plan to use React more heavily in this project to showcase my knowledge and experience with it.
