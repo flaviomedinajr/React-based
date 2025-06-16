@@ -1,3 +1,5 @@
+// Author: Flavio Medina 
+
 import {useState} from "react"
 
 // Form component for adding a new todo item

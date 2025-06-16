@@ -1,3 +1,5 @@
+// Author: Flavio Medina 
+
 import { TodoItem } from "./TodoItem"
 
 // Component to render the list of todos

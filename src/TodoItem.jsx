@@ -1,3 +1,5 @@
+// Author: Flavio Medina 
+
 // Component to display a single todo item
 export function TodoItem({ completed, id, title, toggleTodo, deleteTodo }) {
     return (
