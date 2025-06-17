@@ -1,3 +1,5 @@
+// Author: Flavio Medina
+
 import "./App.css"
 import { useEffect, useState } from "react" 
 import { NewTodoForm } from "./NewTodoForm"
